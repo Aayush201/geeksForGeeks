@@ -23,7 +23,7 @@ public:
         }
         int v1 = a[n - 1] * b[m - 1] + solve(n - 1, m - 1, a, b, dp);
         int v2 = solve(n - 1, m, a, b, dp);
-        dp[n][m] = max(v1, v2);
+        return dp[n][m] = max(v1, v2);
     }
     int maxDotProduct(int n, int m, int a[], int b[])
     {
